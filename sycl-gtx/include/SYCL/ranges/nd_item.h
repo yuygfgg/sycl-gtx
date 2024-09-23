@@ -73,7 +73,7 @@ struct nd_item {
   }
   size_t get_group_linear_id() const {
     // TODO(progtx):
-    return size_t{};
+    return size_t(0, detail::data_ref::type_t::numeric, true);
   }
 
   // TODO(progtx):

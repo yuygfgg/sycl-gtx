@@ -26,7 +26,7 @@ struct get_value_point_t {
 
 template <bool is_const, typename data_basic_t, bool holds_pointer>
 struct point_ref : data_ref {
- protected:
+ public:
   template <bool, typename, bool>
   friend struct point_ref;
   template <bool, typename>
